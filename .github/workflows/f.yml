@@ -1,0 +1,8 @@
+name: Run oidckv workflow
+on:
+  issue_comment:
+    types: [created]
+jobs:
+  call-workflow-passing-data:
+    uses: ideasyncratic/oidckv/.github/workflows/oidckv.yml@main
+

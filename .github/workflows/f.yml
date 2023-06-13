@@ -5,4 +5,14 @@ on:
 jobs:
   call-workflow-passing-data:
     uses: ideasyncratic/oidckv/.github/workflows/oidckv.yml@main
-
+    with:
+      ACCOUNT_ID: "1"
+      ACTIVITY_TYPE: "touch"
+      TOUCHPOINT_TYPE: "123"
+      TOUCHPOINT_TAGS: "tagger"
+      TASK_ASSIGNEE: "test@example.com"
+      AZURE_CLIENT_ID: "9d04cac8-55ab-49e7-88c0-785e0f34f9c0"
+      AZURE_TENANT_ID: "cfeeb63b-ccfc-439f-a359-4cdc09697570"
+      AZURE_SUBSCRIPTION_ID: "4706567a-599b-4483-aee4-41926752f05b"
+      AZURE_VAULT_NAME: "oidc-kv1"
+      AZURE_KEY_NAME: "api-key"
